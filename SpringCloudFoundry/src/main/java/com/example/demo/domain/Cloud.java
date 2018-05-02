@@ -10,6 +10,10 @@ import javax.persistence.Id;
 
 @Entity
 public class Cloud {
+	@Override
+	public String toString() {
+		return "Cloud [cloudID=" + cloudID + ", cloudName=" + cloudName + ", cloudDate=" + cloudDate + "]";
+	}
 	@Id
     @GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer cloudID;
