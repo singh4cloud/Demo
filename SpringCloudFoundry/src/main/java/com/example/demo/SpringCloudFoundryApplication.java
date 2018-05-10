@@ -3,6 +3,7 @@ package com.example.demo;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 import com.example.demo.domain.Cloud;
 import com.example.demo.repository.CloudRepository;
@@ -12,6 +13,7 @@ import java.time.LocalDate;
 import org.springframework.beans.factory.annotation.Autowired;
 
 
+@EnableDiscoveryClient
 @SpringBootApplication
 public class SpringCloudFoundryApplication implements CommandLineRunner {
 
